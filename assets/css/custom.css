@@ -1,0 +1,175 @@
+html, body{
+  height: 100%;
+}
+body {
+  font-family: Arial,sans-serif;
+  color: #ddddd1;
+  background-color: #121211;
+  font-size: 14px;
+}
+/*
+.container-fluid {
+  height: 100%;
+}
+*/
+.marginsplit {
+  margin-bottom: 45px;
+}
+.hidden {
+ display: none;   
+}
+.panel {
+    width: 100% !important;
+    min-height: 100% !important;
+    height: auto !important;
+    background-color: #2b2b2b;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+#gallery-content-center {
+    width: 100% !important;
+    min-height: 100% !important;
+    height: auto !important;
+    background-color: #2b2b2b;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+/*-------------------------
+  Dropbox Element
+--------------------------*/
+/* layout.css Style */
+
+#filedrag
+{
+
+  font-weight: bold;
+  text-align: center;
+  padding: 1em 0;
+  margin: 1em 0;
+  color: #555;
+  border: 2px dashed #555;
+  border-radius: 10px;
+  cursor: default;
+  width: 100%;
+  height: 105px;
+  position: fix;
+}
+
+#filedrag.hover
+{
+  color: #f00;
+  border-color: #f00;
+  border-style: solid;
+  box-shadow: inset 0 3px 4px #888;
+}
+
+img
+{
+  max-width: 100%;
+}
+
+pre
+{
+  width: 95%;
+  height: 8em;
+  font-family: monospace;
+  font-size: 0.9em;
+  padding: 1px 2px;
+  margin: 0 0 1em auto;
+  border: 1px inset #666;
+  background-color: #eee;
+  overflow: auto;
+}
+
+
+#progress p
+{
+  display: block;
+  width: 240px;
+  padding: 2px 5px;
+  margin: 2px 0;
+  border: 1px inset #446;
+  border-radius: 5px;
+  background: #eee url("progress.png") 100% 0 repeat-y;
+}
+
+#progress p.success
+{
+  background: #0c0 none 0 0 no-repeat;
+}
+
+#progress p.failed
+{
+  background: #c00 none 0 0 no-repeat;
+}
+
+@charset "utf-8";
+
+html, body                { font-family: arial; }
+
+
+#upload{
+    font-family:'PT Sans Narrow', sans-serif;
+    background-color:#373a3d;
+
+    background-image:-webkit-linear-gradient(top, #373a3d, #313437);
+    background-image:-moz-linear-gradient(top, #373a3d, #313437);
+    background-image:linear-gradient(top, #373a3d, #313437);
+
+    width:100%;
+    padding:30px;
+    border-radius:3px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#drop{
+    background-color: #2E3134;
+    padding: 40px 50px;
+    margin-bottom: 30px;
+    border: 20px solid rgba(0, 0, 0, 0);
+    border-radius: 3px;
+    border-image: url('../img/border-image.png') 25 repeat;
+    text-align: center;
+    text-transform: uppercase;
+
+    font-size:16px;
+    font-weight:bold;
+    color:#7f858a;
+}
+
+#drop a{
+    background-color:#007a96;
+    padding:12px 26px;
+    color:#fff;
+    font-size:14px;
+    border-radius:2px;
+    cursor:pointer;
+    display:inline-block;
+    margin-top:12px;
+    line-height:1;
+}
+
+#drop a:hover{
+    background-color:#0986a3;
+}
+
+#drop input{
+    display:none;
+}
+.multiselect-container{ font-size:12px;
+    font-weight:bold;
+    color:white;position:absolute;list-style-type:none;margin:0;padding:0}.multiselect-container .input-group{margin:5px}.multiselect-container>li{padding:0}
+.multiselect-container>li>a.multiselect-all label{font-weight:bold}.multiselect-container>li>label.multiselect-group{margin:0;padding:3px 20px 3px 10px;height:100%;font-weight:bold;}.multiselect-container>li>a>label{margin:0;height:100%;cursor:pointer;font-weight:normal}.multiselect-container>li>a>label.radio,.multiselect-container>li>a>label.checkbox{margin:0}.multiselect-container>li>a>label>input[type="checkbox"]{margin-bottom:5px}.btn-group>.btn-group:nth-child(2)>.multiselect.btn{border-top-left-radius:4px;border-bottom-left-radius:4px}
+
+.row {margin-bottom: 20px;}
+
+.btn {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 6px;
+    color: black;
+} 
