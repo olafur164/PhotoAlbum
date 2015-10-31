@@ -3,13 +3,16 @@
 	{
 		private static $_instance = null;
 		/* settings */
+		
+		// Gagnagrunns tenginginn - host - dbname - user - pass
 		private $_host 		= 'localhost',
 				$_dbname   	= 'Photobase',
 				$_user 		= 'root',
 				$_pass 		= '';
 		public 	$_pdo,
 				$_count = 0;
-
+				
+		// Þetta er smiðurinn - hann býr til tenginuna og notar til þess stillingarnar hér að ofan.
 		public function __construct()
 		{
 			try
@@ -32,6 +35,28 @@
 
 			return self::$_instance;
 		}
+		
+		// Þetta er demo function sem sækjir í gagnagrunn
+		public function getAllDatesFromMonth($month)
+		{
+			$statement = $this->_pdo->prepare('call getCategory()'); // Þetta kallar er í stored procedure sem geymt er í gagnagrunni
+			// Skoðaðu mysql stored procedures.
+			$statement->bindParam(1,$month);
+			
+			try 
+			{
+				$statement->execute();
+				
+				$row = $statement->fetch(PDO::FETCH_NUM);
+				return $row;
+			}
+			catch(PDOException $e)
+			{
+				return array();
+			}
+		}
+		
+		// Hér að neðan eru fullt af functions sem gera eithvað með gagnagrunninn, setja inn í gagnagrunn, uppfæra, sækja og eyða.
 	
 		/**
 		 * The function inserts a new category into the image database
